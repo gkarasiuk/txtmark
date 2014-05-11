@@ -241,4 +241,7 @@ public class DefaultDecorator implements Decorator
     {
         out.append(" />");
     }
+
+	@Override
+	public void openListItem2(StringBuilder out) {out.append('>');}
 }

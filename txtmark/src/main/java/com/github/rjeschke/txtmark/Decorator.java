@@ -364,6 +364,23 @@ public interface Decorator
      *            The StringBuilder to write to.
      */
     public void openListItem(final StringBuilder out);
+    
+    /**
+     * Close off the &lt;li tag.
+     * 
+     * <p>
+     * Default implementation is:
+     * </p>
+     * 
+     * <pre>
+     * <code>out.append('>');</code>
+     * </pre>
+     * 
+     * <p>GRK - I needed to add this because the emitter was always adding a closing &gt; symbol.
+     * @param out
+     * @author Gary Karasiuk
+     */
+    public void openListItem2(final StringBuilder out);
 
     /**
      * Called when a list item is closed.

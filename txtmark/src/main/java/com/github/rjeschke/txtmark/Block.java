@@ -42,6 +42,12 @@ class Block
     {
         //
     }
+    
+    @Override
+    public String toString() {
+    	if (lines == null)return type.toString();
+    	return type.toString() +  ": " + lines.value;   	
+    }
 
     /**
      * @return <code>true</code> if this block contains lines.

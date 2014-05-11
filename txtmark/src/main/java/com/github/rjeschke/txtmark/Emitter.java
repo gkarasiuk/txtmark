@@ -100,14 +100,15 @@ class Emitter
             this.config.decorator.openOrderedList(out);
             break;
         case LIST_ITEM:
-            this.config.decorator.openListItem(out);
-            if(this.useExtensions && root.id != null)
+            config.decorator.openListItem(out);
+            if(useExtensions && root.id != null)
             {
                 out.append(" id=\"");
                 Utils.appendCode(out, root.id, 0, root.id.length());
                 out.append('"');
             }
-            out.append('>');
+            //GRK I made this more flexible
+            config.decorator.openListItem2(out);
             break;
         }
 
