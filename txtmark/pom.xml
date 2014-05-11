@@ -10,7 +10,7 @@
 
   <groupId>com.karasiuk</groupId>
   <artifactId>txtmark</artifactId>
-  <version>0.12-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>txtmark</name>
   <description>Markdown parser for the JVM</description>
   <url>https://github.com/gkarasiuk/txtmark</url>
